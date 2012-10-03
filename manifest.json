@@ -1,0 +1,21 @@
+{
+  "name": "Gmail Lightbox",
+  "version": "0.1",
+  "manifest_version": 2,
+  
+  "description": "A nicer view for images in gmail.",
+  // "icons": { "128": "icon.png" },
+  "content_scripts": [
+    { 
+      "matches": ["*://mail-attachment.googleusercontent.com/*"], 
+      "js": ["js/jquery-1.7.2.min.js", "js/content_script.js", "js/lightbox.js"],
+      "css": ["css/lightbox.css", "css/gmail-lighbox.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "images/close.png",
+    "images/loading.gif",
+    "images/next.png",
+    "images/prev.png"
+  ]
+}
