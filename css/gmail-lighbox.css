@@ -6,29 +6,46 @@
 	background: url('chrome-extension://__MSG_@@extension_id__/images/next.png') right 48% no-repeat !important;
 }
 
-/* gmail-lightbox */
-body.gmail-lightbox-content {
-	text-align: center;
+/* Extenstion styles 
+*************************
+**/
+body.modified{
+	margin: 0;
+	padding: 25px;
 	background-color: #222;
-	background-image: url(https://mail-attachment.googleusercontent.com/attachment/u/images/bg-checker.png);
 	color: white;
 	font-family: 'Open Sans', 'lucida grande', tahoma, sans-serif;
 }
 
-h1.gmail-lightbox-content {
-	color: #D0EB6A;
-	font-family: 'Fredoka One', 'lucida grande', tahoma, sans-serif;
-	font-size: 30px;
-	font-weight: normal;
-	height: 36px;
-	letter-spacing: normal;
-	line-height: 36px;
-	text-align: center;
-	text-shadow: black 0px -1px 0px;
-	vertical-align: baseline;
+#content{
+	position: relative;
+	min-height: 100%;
 }
 
-a.gmail-lightbox-content{
+#images{ 
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#images img{
+	display: inline-block;
+	max-width: 99px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 1px solid white;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 0;
+	text-align: center;
+}
+#footer p{
+	margin: 0;
+}
+#footer a{
 	color: #8AD459;
 	font-family: 'Open Sans', 'lucida grande', tahoma, sans-serif;
 	font-size: 14px;
@@ -36,21 +53,4 @@ a.gmail-lightbox-content{
 	line-height: 22.75px;
 	text-shadow: black 0px -1px 0px;
 	text-decoration: none;
-}
-
-#main-container{
-
-}
-#lightbox-container{
-	margin: 25px auto;
-	position: relative;
-	width: 80%;
-	height: 80%;
-}
-#lightbox-container img{
-	position: absolute;
-	border: 3px solid white;
-	-webkit-box-shadow: -5px -3px 9px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    -5px -3px 9px rgba(50, 50, 50, 0.5);
-	box-shadow:         -5px -3px 9px rgba(50, 50, 50, 0.5);
 }
