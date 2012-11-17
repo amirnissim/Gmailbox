@@ -1,9 +1,9 @@
 {
   "name": "Gmail Lightbox",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
   
-  "description": "A nicer view for images in gmail.",
+  "description": "A modern view for images in gMail.",
   // "icons": { "128": "icon.png" },
   "content_scripts": [
     { 
