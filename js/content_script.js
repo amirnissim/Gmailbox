@@ -22,13 +22,13 @@ if ($body.find("img").length > 0){  // only if page contains images (exempt pdf 
 						"<a id='restore' href='#'>restore the old look<a>" +
 						"</p>");
 
-	var $new_content = $('<div id="content"></div>')
+	var new_content = $('<div id="content"></div>')
 						.append($images, $footer);
 
 
-	$body.empty().append($new_content).addClass("modified");
+	$body.html(new_content).addClass("new");
 
 	$("#restore").click(function(e){
-		$body.html(old_content).removeClass("modified");
+		$body.html(old_content).removeClass("new");
 	});
 }
